@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <header>
+            <!-- nothing -->
+        </header>
+        <main>
+            <h1 class="title abslute">TEMPERATURE CONVERTER :)</h1>
+
+            <div class="container">
+                <div class="block1 input">
+                    <form id="tempconv" onsubmit="tempconv(); return false">
+                        <div class="hp">
+                            <div>
+                                <p class="title1">Enter Temperature :</p>
+                                <input type="number" id="temp" placeholder="default = 0">
+                            </div>
+                            <div>
+                                <p class="title2">Select Unit :</p>
+                                <select name="unitselect" id="unitselect">
+                                    <option value="celc">Celcius</option>
+                                    <option value="farh">Faranite</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" id="submit"
+                            onclick="document.getElementById('spanoutput').style.fontSize = '50px'">CONVERT</button>
+                    </form>
+                </div>
+                <div class="block2">
+                    <span class="output" id="spanoutput">enter the data & hit the convert</span>
+                </div>
+            </div>
+            <div class="cp">Copyright © 2023 CodeWithDexter.com</div>
+        </main>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
